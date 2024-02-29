@@ -4,7 +4,12 @@
 const nextConfig = {
   /* config options here */
   images: {
-    domains: ["https://assets.tina.io"],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "assets.tina.io",
+      },
+    ],
   },
 };
 
